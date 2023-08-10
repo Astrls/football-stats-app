@@ -24,19 +24,16 @@
       </nav>
     </header>
     <main>
-      <section>
-        <div class="player-card-wrapper">
-          <div class="player-card">
-            <div class="player-card-name"><%=players[0].name%></div>
-            <div class="player-card-nation player-detail">
-              <%=players[0].nationality%>
-            </div>
-            <div class="player-card-club player-detail">
-              <%=players[0].club%>
-            </div>
-            <div class="player-card-rating player-detail">
-              <%=players[0].overallRating%>
-            </div>
+      <section class="player-card-wrapper">
+        <div class="player-card">
+          <h1 class="player-card-name"><%=players[0].name%></h1>
+          <div class="player-card-nation player-detail">
+            <h2>Nationality</h2>
+            <%=players[0].nationality%>
+          </div>
+          <div class="player-card-club player-detail"><%=players[0].club%></div>
+          <div class="player-card-rating player-detail">
+            <%=players[0].overallRating%>
           </div>
         </div>
       </section>

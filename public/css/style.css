@@ -16,7 +16,7 @@ nav {
   align-items: center;
   font-size: 1.5rem;
   color: #3f3f3f;
-  font-family: Titillium Web;
+  font-family: "Titillium Web";
   min-height: 5rem;
   padding: 2rem;
 }
@@ -33,6 +33,36 @@ nav a:visited {
 }
 nav a:hover {
   color: #808080;
+}
+
+.player-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+}
+
+.player-card {
+  display: flex;
+  flex-direction: column;
+  font-family: "Titillium Web";
+  min-width: 300px;
+}
+.player-card h1 {
+  align-self: left;
+  font-size: 3rem;
+  color: #DF4E3B;
+  text-transform: uppercase;
+}
+.player-card .player-detail {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: #3f3f3f solid 1px;
+}
+.player-card .player-detail h2 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #888888;
 }
 
 /*# sourceMappingURL=style.css.map */
