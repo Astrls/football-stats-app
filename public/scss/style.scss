@@ -19,20 +19,19 @@ nav {
   font-family: Titillium Web;
   min-height: 5rem;
   padding: 2rem;
-}
-nav ul {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  gap: 2rem;
-}
-nav a:link,
-nav a:visited {
-  color: #3f3f3f;
-  text-decoration: none;
-}
-nav a:hover {
-  color: #808080;
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 2rem;
+  }
+  a:link,
+  a:visited {
+    color: #3f3f3f;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #808080
+  }
 }
 
-/*# sourceMappingURL=style.css.map */

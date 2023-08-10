@@ -1,16 +1,9 @@
 const axios = require("axios");
 const cheerio = require("cheerio");
 const mongoose = require("mongoose");
+const Player = require("./models/player_model.js")
 require("./db.js");
 
-const playerSchema = new mongoose.Schema({
-  name: String,
-  nationality: String,
-  club: String,
-  overallRating: Number,
-});
-
-const Player = mongoose.model("Player", playerSchema);
 
 for (let i = 1; i < 606; i++) {
   axios
