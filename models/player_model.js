@@ -6,6 +6,7 @@ const playerSchema = new mongoose.Schema({
     nationality: String,
     club: String,
     overallRating: Number,
+    player_id: Number
   });
   
   const Player = mongoose.model("Player", playerSchema);

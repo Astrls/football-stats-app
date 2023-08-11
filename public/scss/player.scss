@@ -1,0 +1,99 @@
+$font: "Titillium Web";
+$color_1: #3f3f3f;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #e8e8e8;
+}
+
+nav {
+  background: linear-gradient(180deg, #cdcdcd 0%, #e8e8e8 100%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  color: $color_1;
+  font-family: $font;
+  min-height: 5rem;
+  padding: 2rem;
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 2rem;
+  }
+  a:link,
+  a:visited {
+    color: $color_1;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #808080;
+  }
+}
+
+main {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.player-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  border-radius: 5px;
+  margin: 15px;
+  margin-top: 30px;
+  padding: 2rem;
+  background: #d9d9d9;
+  box-shadow: 5px 4px 14px 0px rgba(0, 0, 0, 0.15);
+}
+
+.player-card {
+  display: flex;
+  flex-direction: column;
+  font-family: $font;
+
+  h1 {
+    font-size: 2rem;
+    color: #df4e3b;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  .player-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: $color_1 solid 1px;
+    font-weight: 400;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    color: $color_1;
+
+    h2 {
+      color: #888888;
+      font-weight: 400;
+      font-size: 1rem;
+    }
+    .overall-score{
+      font-size:1.5rem;
+      font-weight: 600;
+    }
+  }
+}
+
+footer {
+  background: linear-gradient(0deg, #cdcdcd 0%, #e8e8e8 100%);
+  min-height: 3rem;
+}
