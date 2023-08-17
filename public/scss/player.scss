@@ -63,6 +63,7 @@ main {
   display: flex;
   flex-direction: column;
   font-family: $font;
+  min-width: 300px;
 
   h1 {
     font-size: 2rem;

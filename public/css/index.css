@@ -109,7 +109,7 @@ main .searchbar button :hover {
   font-weight: 600;
 }
 
-.hide {
+.hidden {
   visibility: none;
 }
 

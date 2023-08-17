@@ -59,6 +59,7 @@ main {
   display: flex;
   flex-direction: column;
   font-family: "Titillium Web";
+  min-width: 300px;
 }
 .player-card h1 {
   font-size: 2rem;
@@ -92,4 +93,4 @@ footer {
   min-height: 3rem;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=player.css.map */

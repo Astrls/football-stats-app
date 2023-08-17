@@ -6,16 +6,15 @@ const nameConvert = require("../middleware/nameConvert");
 
 
 //Static routes
-router.get('/info', (req, res) => {
+router.get('/api/info', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'public', 'info.html'));
 });
 
 
 router.get("/", async (req, res) => {
   try {
-    const players = await Player.find({}).sort({ overallRating: -1 });
+    const players = await Player.find({}).sort({ overallRating: -1 }).limit(10);
     res.render("./index.ejs", { players });
-    console.log(players);
   } catch (err) {
     console.log(err);
     res.status(500).send("Server error");
