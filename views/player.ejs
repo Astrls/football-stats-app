@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Player</title>
+    <link rel="stylesheet" href="/static/css/player.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="../">Home</a>
+        <ul>
+          <li><a href="../players">Players</a></li>
+          <li><a href="../teams">Teams</a></li>
+          <li><a href="../api/info">API</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="player-card-wrapper">
+        <div class="player-card">
+          <h1 class="player-card-name"><%=players[0].name%></h1>
+          <div class="player-card-nation player-detail">
+            <h2>Nationality</h2>
+            <%=players[0].nationality%>
+          </div>
+          <div class="player-card-club player-detail">
+            <h2>Club</h2>
+            <%=players[0].club%></div>
+          <div class="player-card-rating player-detail">
+            <h2>Rating</h2>
+            <span class="overall-score"><%=players[0].overallRating%></span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script type="module" src="../routes/viewRoutes.js"></script>
+  </body>
+</html>
